@@ -32,21 +32,14 @@ export class SignInComponent {
     if (this.form.valid) {
       this.loading = true;
       this.error = null;
-      // Simulate authentication here. Replace with real backend call.
+      // Bypass authentication: allow any email format and non-empty password
       setTimeout(() => {
         this.loading = false;
-        if (
-          this.form.value.email === 'demo@weekend.com' &&
-          this.form.value.password === 'weekend'
-        ) {
-          // Use router navigation if available, else fallback to location
-          if (typeof window !== 'undefined') {
-            window.location.href = '/home';
-          }
-        } else {
-          this.error = 'Invalid email or password';
+        // Simulate successful login if form is valid
+        if (typeof window !== 'undefined') {
+          window.location.href = '/home';
         }
-      }, 1200);
+      }, 900);
     }
   }
 }
