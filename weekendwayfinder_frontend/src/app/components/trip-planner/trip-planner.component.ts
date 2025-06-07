@@ -22,7 +22,13 @@ export class TripPlannerComponent {
   moods = [
     { label: 'Relaxing', value: 'relaxing' },
     { label: 'Adventurous', value: 'adventurous' },
-    { label: 'Cultural', value: 'cultural' }
+    { label: 'Cultural', value: 'cultural' },
+    { label: 'Romantic', value: 'romantic' },
+    { label: 'Family', value: 'family' },
+    { label: 'Nature', value: 'nature' },
+    { label: 'Foodie', value: 'foodie' },
+    { label: 'Wellness', value: 'wellness' },
+    { label: 'Party', value: 'party' }
   ];
 
   constructor() {
