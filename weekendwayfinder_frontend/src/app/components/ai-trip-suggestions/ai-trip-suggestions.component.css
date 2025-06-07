@@ -1,45 +1,65 @@
+.ai-suggestions-bg {
+  min-height: 100vh;
+  background: url('/assets/trip-tiles-bg.jpg') top center/cover no-repeat, linear-gradient(120deg, #F7C87322 40%, #F25C5450 100%);
+  padding-top: 2rem;
+}
 .results-title {
   text-align: center;
   margin: 2.4rem 0 1rem 0;
+  color: #25293c;
+  letter-spacing: 0.6px;
+  text-shadow: 0 2px 12px #ffeecf18;
 }
 .cards-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.15rem;
+  gap: 1.35rem;
   justify-content: center;
 }
 .trip-card {
-  background: #ffffffc8;
-  border-radius: 1.1rem;
-  box-shadow: 0 3px 13px #2d5f5d15;
-  padding: 1.1rem 1.4rem;
-  min-width: 230px;
+  background: linear-gradient(125deg, #fffefbff 70%, #f1feeecc 100%);
+  border-radius: 1.18rem;
+  box-shadow: 0 3px 20px #82a89928, 0 2px 10px #F7C87318;
+  padding: 1.25rem 1.4rem;
+  min-width: 248px;
   width: 100%;
-  max-width: 240px;
-  margin-bottom: 0.5rem;
+  max-width: 260px;
+  margin-bottom: 0.7rem;
   display: flex;
   flex-direction: column;
   align-items: left;
+  border: 2px solid #F25C5412;
+  transition: box-shadow 0.18s, transform 0.18s;
+  position: relative;
+  overflow: hidden;
+}
+.trip-card:hover {
+  box-shadow: 0 6px 32px #F25C5424, 0 5px 10px #2D5F5D18;
+  transform: scale(1.03);
+  border-color: #F25C54cc;
 }
 .trip-header h4 {
   color: #F25C54;
   margin-bottom: .4rem;
-  font-weight: 700;
-  font-size: 1.18rem;
+  font-weight: 800;
+  font-size: 1.22rem;
+  letter-spacing: .7px;
 }
 .trip-details {
-  font-size: 1.01rem;
-  color: #2D5F5D;
+  font-size: 1.05rem;
+  color: #347663;
+  font-weight: 500;
 }
 .desc {
-  color: #3d4341;
+  color: #462F1D;
   margin-top: .33rem;
-  font-size: .96rem;
+  font-size: .98rem;
+  font-style: italic;
 }
 @media (max-width: 650px) {
   .cards-grid {
     flex-direction: column;
-    gap: .8rem;
+    gap: 1.05rem;
     align-items: center;
   }
   .trip-card {

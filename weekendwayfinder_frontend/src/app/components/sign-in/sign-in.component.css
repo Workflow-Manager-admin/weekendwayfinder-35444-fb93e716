@@ -3,7 +3,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('/assets/weekend-bg.jpg') center/cover no-repeat, linear-gradient(120deg, #2D5F5D 60%, #F7C873 100%);
+  position: relative;
+  background: url('/assets/signin-morning.jpg') center/cover no-repeat;
+  /* Fallback gradient if image doesn't load */
+  background-color: #fff7e2;
+}
+.sign-in-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, #FFDEB8bb 60%, #2D5F5D77 100%);
+  z-index: 0;
+  pointer-events: none;
 }
 
 .sign-in-container {

@@ -1,16 +1,18 @@
-<div class="results-title">
-  <h3>Your AI Trip Suggestions</h3>
-</div>
-<div class="cards-grid">
-  <div class="trip-card" *ngFor="let s of suggestions">
-    <div class="trip-header">
-      <h4>{{ s.title }}</h4>
-    </div>
-    <div class="trip-details">
-      <div><b>Destination:</b> {{ s.destination }}</div>
-      <div><b>Distance:</b> {{ s.distance }}</div>
-      <div><b>Estimated Cost:</b> {{ s.cost }}</div>
-      <div class="desc">{{ s.description }}</div>
+<div class="ai-suggestions-bg">
+  <div class="results-title">
+    <h3>Your AI Trip Suggestions</h3>
+  </div>
+  <div class="cards-grid">
+    <div class="trip-card" *ngFor="let s of suggestions">
+      <div class="trip-header">
+        <h4>{{ s.title }}</h4>
+      </div>
+      <div class="trip-details">
+        <div><b>Destination:</b> {{ s.destination }}</div>
+        <div><b>Distance:</b> {{ s.distance }}</div>
+        <div><b>Estimated Cost:</b> {{ s.cost }}</div>
+        <div class="desc">{{ s.description }}</div>
+      </div>
     </div>
   </div>
 </div>

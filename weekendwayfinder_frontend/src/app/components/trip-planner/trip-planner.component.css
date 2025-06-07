@@ -3,7 +3,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(120deg, #F7C873 80%, #2D5F5D 100%);
+  position: relative;
+  background: url('/assets/planner-nature.jpg') center/cover no-repeat;
+  background-color: #f1fbe9;
+}
+.planner-bg::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(105deg, #B9E7CB70 20%, #F7C87345 95%);
+  z-index: 0;
+  pointer-events: none;
 }
 .planner-container {
   background: #fffefa;
