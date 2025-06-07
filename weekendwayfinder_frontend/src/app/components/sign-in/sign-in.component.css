@@ -1,0 +1,86 @@
+.sign-in-bg {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('/assets/weekend-bg.jpg') center/cover no-repeat, linear-gradient(120deg, #2D5F5D 60%, #F7C873 100%);
+}
+
+.sign-in-container {
+  background: #fffefc;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 28px rgba(50,50,50,0.09);
+  padding: 2.5rem 2rem 2rem 2rem;
+  max-width: 350px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  color: #2D5F5D;
+  margin-bottom: 1.8rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: .15rem;
+  color: #2D5F5D;
+}
+
+input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: .6rem .5rem;
+  border: 1px solid #F7C873;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: #2D5F5D;
+  background-color: #fcfbf8;
+  outline: none;
+  transition: border 0.2s;
+}
+input.invalid {
+  border-color: #F25C54;
+}
+button[type="submit"] {
+  width: 100%;
+  margin-top: 0.7rem;
+  background: #2D5F5D;
+  color: white;
+  font-size: 1.09rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.8rem;
+  padding: 0.6rem;
+  cursor: pointer;
+  transition: background-color .22s;
+}
+button[disabled] {
+  background: #b7cbc9;
+}
+.error {
+  color: #F25C54;
+  font-size: .91rem;
+  margin-top: 0.15rem;
+}
+.loading {
+  color: #2D5F5D;
+  font-size: .91rem;
+  margin-top: 0.4rem;
+}
+.demo-tip {
+  font-size: .91rem;
+  margin-top: 1.65rem;
+  color: #999b88;
+}
+@media (max-width: 600px) {
+  .sign-in-container {
+    padding: 1.2rem 0.7rem;
+    box-shadow: 0 2px 12px rgba(44,44,44,.14);
+  }
+}

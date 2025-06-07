@@ -1,0 +1,4 @@
+WeekendWayfinder image assets:
+- weekend-bg.jpg (for sign-in background)
+- weekend-hero.jpg (for home background)
+(Replace with real assets in production)

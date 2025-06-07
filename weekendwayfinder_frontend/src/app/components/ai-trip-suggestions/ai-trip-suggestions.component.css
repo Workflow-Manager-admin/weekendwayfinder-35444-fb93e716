@@ -1,0 +1,49 @@
+.results-title {
+  text-align: center;
+  margin: 2.4rem 0 1rem 0;
+}
+.cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.15rem;
+  justify-content: center;
+}
+.trip-card {
+  background: #ffffffc8;
+  border-radius: 1.1rem;
+  box-shadow: 0 3px 13px #2d5f5d15;
+  padding: 1.1rem 1.4rem;
+  min-width: 230px;
+  width: 100%;
+  max-width: 240px;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.trip-header h4 {
+  color: #F25C54;
+  margin-bottom: .4rem;
+  font-weight: 700;
+  font-size: 1.18rem;
+}
+.trip-details {
+  font-size: 1.01rem;
+  color: #2D5F5D;
+}
+.desc {
+  color: #3d4341;
+  margin-top: .33rem;
+  font-size: .96rem;
+}
+@media (max-width: 650px) {
+  .cards-grid {
+    flex-direction: column;
+    gap: .8rem;
+    align-items: center;
+  }
+  .trip-card {
+    min-width: unset;
+    max-width: 97vw;
+  }
+}

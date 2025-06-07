@@ -1,0 +1,27 @@
+<div class="sign-in-bg">
+  <div class="sign-in-container">
+    <h1>Sign In</h1>
+    <form [formGroup]="form" (ngSubmit)="submit()" novalidate>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" formControlName="email" type="email" required [class.invalid]="form.controls['email'].invalid && form.controls['email'].touched">
+        <div *ngIf="form.controls['email'].invalid && form.controls['email'].touched" class="error">
+          Valid email required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input id="password" formControlName="password" type="password" required minlength="6" [class.invalid]="form.controls['password'].invalid && form.controls['password'].touched">
+        <div *ngIf="form.controls['password'].invalid && form.controls['password'].touched" class="error">
+          Min 6 characters
+        </div>
+      </div>
+      <button type="submit" [disabled]="loading || form.invalid">Sign In</button>
+      <div *ngIf="loading" class="loading">Signing in...</div>
+      <div *ngIf="error" class="error">{{ error }}</div>
+    </form>
+    <div class="demo-tip">
+      Demo: demo&#64;weekend.com / weekend
+    </div>
+  </div>
+</div>

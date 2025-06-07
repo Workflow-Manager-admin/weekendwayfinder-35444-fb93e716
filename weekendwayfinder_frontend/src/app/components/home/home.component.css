@@ -1,0 +1,59 @@
+.home-bg {
+  min-height: 100vh;
+  background: url('/assets/weekend-hero.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, #2D5F5D88 50%, #F7C87367 100%);
+  z-index: 1;
+}
+.home-content {
+  position: relative;
+  z-index: 2;
+  max-width: 480px;
+  background: rgba(254,251,240,0.98);
+  border-radius: 1.3rem;
+  padding: 2.7rem 2rem 2.2rem 2rem;
+  text-align: center;
+  box-shadow: 0 4px 28px rgba(80,80,80,.07);
+}
+h1 {
+  color: #2D5F5D;
+  margin-bottom: 0.8rem;
+  font-size: 2.3rem;
+  line-height: 1.1;
+}
+p {
+  color: #3f504f;
+  font-size: 1.13rem;
+  margin-bottom: 1.35rem;
+}
+.cta-btn {
+  background: linear-gradient(90deg, #F7C873 50%, #F25C54 100%);
+  color: #2D5F5D;
+  padding: 0.75rem 2.2rem;
+  border-radius: 1.6rem;
+  font-weight: bold;
+  font-size: 1.15rem;
+  text-decoration: none;
+  transition: background 0.17s, color 0.17s;
+  box-shadow: 0 2px 10px #f4e9c4a8;
+}
+.cta-btn:hover {
+  background: linear-gradient(90deg, #F25C54 80%, #2D5F5D 100%);
+  color: #fff;
+}
+
+@media (max-width: 580px) {
+  .home-content {
+    padding: 1.1rem 0.4rem;
+  }
+  h1 {
+    font-size: 1.34rem;
+  }
+}
